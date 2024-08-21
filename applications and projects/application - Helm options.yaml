@@ -13,7 +13,7 @@ spec:
     repoURL: "https://github.com/coco2908/argocd-example-apps.git"
     targetRevision: master
     helm:
-     releaseName: cococandy-1
+     releaseName: nginx-app
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
