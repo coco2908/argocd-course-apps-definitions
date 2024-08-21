@@ -13,7 +13,7 @@ spec:
     repoURL: "https://github.com/coco2908/argocd-example-apps.git"
     targetRevision: master
     directory:
-      recurse: false
+      recurse: true
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
