@@ -1,16 +1,16 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: demo-project
+  name: fms
   namespace: argocd
 spec:
-  description: Demo Project
+  description: Project fms
   sourceRepos:
-  - '*'
+  - 'https://github.com/coco2908/argocd-example-apps.git'
 
   destinations:
   - namespace: '*'
-    server: '*'
+    server: 'https://kubernetes.default.svc'
 
   clusterResourceWhitelist:
   - group: '*'
