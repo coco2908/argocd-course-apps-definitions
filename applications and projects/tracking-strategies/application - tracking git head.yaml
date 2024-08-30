@@ -9,11 +9,11 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    path: helm-guestbook
+    repoURL: "https://github.com/coco2908/argocd-example-apps-private.git"
     targetRevision: HEAD
-    directory:
-      recurse: true
+    helm:
+     releaseName: nginx-app-2
   syncPolicy:
     automated: {}
     syncOptions:
